@@ -1,3 +1,11 @@
+@font-face
+    font-family: "Bebas Neue"
+    src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff")
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
 *
     box-sizing: border-box
 
@@ -9,7 +17,7 @@ body
     padding-top: 12px
     padding-bottom: 12px
     border-bottom: 4px solid #3596F5
-    
+
 .navbar
     max-width: 1280px
     margin: auto
@@ -43,3 +51,56 @@ body
         line-height: 20px
         color: #fff
         text-decoration: none
+
+.main
+    max-width: 1280px
+    margin: auto
+    padding-top: 54px
+    display: flex
+    text-align: center
+
+    &__title
+        font-family: "Bebas Neue", sans-serif
+        font-size: 37px
+        line-height: 44px
+        color: #635854
+
+    &__info
+        flex-grow: 1
+        text-align: center
+        align-items: center
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+.home-image path
+    opacity: 0
+    cursor: pointer
+    &:hover
+        opacity: 1
+
+.counter
+    color: #635854
+    font-size: 124px
+    font-family: "Bebas Neue", sans-serif
+    margin-top: 10px
+    margin-bottom: 10px 
+    &-group
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__button
+        background-color: transparent
+        border: none
+    &__arrow
+        &-down
+            transform: rotateX(180deg)
+
+.button
+    &-primary
+        background: #3596F5
+        border-radius: 6px
+        padding: 16px 36px
+        border: none
+        color: #fff
+        cursor: pointer

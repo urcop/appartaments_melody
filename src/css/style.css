@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -67,5 +75,91 @@ body {
   line-height: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+.main {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.main__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+}
+
+.main__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-image path {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.home-image path:hover {
+  opacity: 1;
+}
+
+.counter {
+  color: #635854;
+  font-size: 124px;
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.counter-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.counter__button {
+  background-color: transparent;
+  border: none;
+}
+
+.counter__arrow-down {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.button-primary {
+  background: #3596F5;
+  border-radius: 6px;
+  padding: 16px 36px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
